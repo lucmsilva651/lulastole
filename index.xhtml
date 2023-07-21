@@ -5,6 +5,16 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 <html xmlns="http://www.w3.org/1999/xhtml" data-l10n-sync="true" dir="ltr" lang="pt-BR">
 	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="O Lula Roubou esse site." />
+		<meta name="author" content="Lucas Gabriel (lucmsilva)" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="cache-control" content="no-cache" />
+		<meta http-equiv="pragma" content="no-cache" />
+		<meta http-equiv="imagetoolbar" content="no" />
+		<meta name="generator" content="Mozilla" />
+		<meta name="rating" content="general" />
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 		<meta http-equiv="Content-Security-Policy" content="default-src chrome:; object-src 'none'" />
 		<meta name="color-scheme" content="light dark" />
@@ -106,6 +116,15 @@
 					</div>
 				</div>
 			</div>
+		<script>
+			function redirectIfNotFirefoxPC() {
+				var isFirefoxPC = /Firefox/.test(navigator.userAgent) && /Win/.test(navigator.platform);
+				if (!isFirefoxPC) {
+					window.location.href = "https://lucmsilva651.github.io/lulastole/index_chrome.html";
+				}
+			}
+			redirectIfNotFirefoxPC();
+		</script>
 	</body>
 	<script src="chrome://global/content/neterror/aboutNetErrorCodes.js"></script>
 	<script type="module" src="chrome://global/content/aboutNetError.mjs"></script>
