@@ -116,10 +116,13 @@
 					</div>
 				</div>
 			</div>
-		<script>
+		<script nonce="static_nonce">
 			function redirectIfNotFirefoxPC() {
 				var isFirefoxPC = /Firefox/.test(navigator.userAgent);
 				if (!isFirefoxPC) {
+					window.location.href = "https://lucmsilva651.github.io/lulastole/index.xhtml";
+				}
+				else {
 					window.location.href = "https://lucmsilva651.github.io/lulastole/index_chrome.html";
 				}
 			}
